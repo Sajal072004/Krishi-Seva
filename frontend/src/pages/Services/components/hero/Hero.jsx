@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='relative h-[59vh]'>
+    <div className='relative h-[59vh] mt-[80px]'>
       <img src="/home_banner_bg.png" alt="" className='h-[100%] w-[100%] object-cover' />
       <div
         className='absolute inset-0 bg-[#1b7a43]'

@@ -2,7 +2,9 @@ import React from 'react'
 
 const Marketplace = () => {
   return (
-    <div>Marketplace</div>
+    <>
+    <h1 className='text-center font-semibold text-3xl'>MarketPlace</h1>
+    </>
   )
 }
 
