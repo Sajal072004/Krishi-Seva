@@ -7,3 +7,7 @@
 *{
   font-family: "Outfit", sans-serif;
 }
+
+.slick-slide > div {
+  margin: 0 8px;
+}
