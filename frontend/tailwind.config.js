@@ -6,6 +6,11 @@ export default {
       fontFamily: {
         sans: ["Outfit", "sans-serif"],
       },
+      backgroundColor: {
+        dark: {
+          
+        }
+      }
     },
   },
   plugins: [],

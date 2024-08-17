@@ -87,10 +87,10 @@ const Cards = () => {
             return (
               <div
                 key={index}
-                className="bg-white h-full text-black rounded-xl shadow-xl"
+                className="bg-white h-full text-black rounded-xl shadow-xl "
                 
               >
-                <div className="rounded-xl border shadow-t-xl bg-white flex  flex-col justify-center items-center h-56">
+                <div className="rounded-xl border-y-[3px] border-x-[3px] shadow-t-xl bg-white flex  flex-col justify-center items-center h-56 hover:bg-[#1b7a43] hover:text-white">
                   <img
                     src={d.image}
                     alt=""
