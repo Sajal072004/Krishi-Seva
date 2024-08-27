@@ -8,7 +8,7 @@ const Footer = () => {
           <img 
             src="logo.png" 
             alt="logo" 
-            style={{ width: '110px', height: 'auto' }} // Set the image size here
+            style={{ width: '110px', height: 'auto' }}
           />
           <p className='mt-4 text-center text-[18px] mx-6'>
             Agro, short for agriculture, encompasses all activities related to the cultivation of crops, food, fiber, and agricultural commodities.

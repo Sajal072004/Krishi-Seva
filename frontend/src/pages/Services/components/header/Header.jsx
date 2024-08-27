@@ -11,7 +11,7 @@ const Header = () => {
         <img src="/logo.png" alt="" width={56} className='mx-4' />
         <div className='flex-grow flex justify-center'>
           <ul className='flex gap-x-6 lg:gap-x-12  list-none p-0 text-gray-500 text-lg cursor-pointer'>
-            <li>Home</li>
+            <li>Dashboard</li>
             <li>Product</li>
             <li>Services</li>
             <li>Contact Us</li>
