@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
 import SectionOne from './components/SectionOne/SectionOne'
 import Weather from './components/Weather/Weather'
+import RecentActivity from './components/RecentActivity/RecentActivity'
 
 const Dashboard = () => {
   return (
@@ -16,49 +17,26 @@ const Dashboard = () => {
           <div className='flex w-full'>
 
             <div className='flex flex-row w-[55vw] z-0'>
-
-                <div>
-                    <SectionOne/>
-                </div>
-
-                <div>
-
-                </div>
-
-                <div>
-
-                </div>
-
-
-
+              <SectionOne/>
+              <div>
+                {/* Placeholder or other content */}
+              </div>
+              <div>
+                {/* Placeholder or other content */}
+              </div>
             </div>
 
-            <div className='flex flex-row w-[25vw] z-0 h-[42vh]'>
-                <div>
-                    <Weather/>
-                </div>
-
-                <div>
-
-                </div>
-
+            <div className='flex flex-col w-[25vw] z-0'>
+              <Weather />
+              <RecentActivity />
             </div>
-
-
-
 
           </div>
 
         </div>
-
-
-
       </div>
-
-
-
     </div>
   )
 }
 
-export default Dashboard
+export default Dashboard;
