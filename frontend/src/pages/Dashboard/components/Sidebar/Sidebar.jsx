@@ -43,7 +43,7 @@ const Sidebar = () => {
   const [selected, setSelected] = useState('Dashboard');
 
   return (
-    <div className='w-[25vw] md:w-[20vw] h-[100vh] bg-white'>
+    <div className='w-[25vw] md:w-[20vw] h-[120vh] bg-white'>
       <div className='flex h-[17vh] items-center gap-3 justify-left'>
         <img src="logo.png" alt="Logo" className='w-[70px] h-[70px] ml-3' />
         <h1 className='text-2xl text-gray-700 font-semibold'>Krishi Seva</h1>
