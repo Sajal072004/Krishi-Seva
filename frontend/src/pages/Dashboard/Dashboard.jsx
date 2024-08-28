@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 import SectionOne from './components/SectionOne/SectionOne'
 import Weather from './components/Weather/Weather'
 import RecentActivity from './components/RecentActivity/RecentActivity'
+import TopSeller from './components/TopSeller/TopSeller'
 
 const Dashboard = () => {
   return (
@@ -16,14 +17,9 @@ const Dashboard = () => {
 
           <div className='flex w-full'>
 
-            <div className='flex flex-row w-[55vw] z-0'>
+            <div className='flex-row w-[55vw] z-0'>
               <SectionOne/>
-              <div>
-                {/* Placeholder or other content */}
-              </div>
-              <div>
-                {/* Placeholder or other content */}
-              </div>
+              <TopSeller/>
             </div>
 
             <div className='flex flex-col w-[25vw] z-0 gap-10'>

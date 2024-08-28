@@ -43,6 +43,20 @@ const arr = [
     activity: "Asked a question about a plant",
     time: "30 mins ago",
     img: "profile_icon.png"
+  },
+  {
+    id: 7,
+    name: "Eve",
+    activity: "Asked a question about a plant",
+    time: "30 mins ago",
+    img: "profile_icon.png"
+  },
+  {
+    id: 4,
+    name: "Charlie",
+    activity: "Added a new plant to wishlist",
+    time: "15 mins ago",
+    img: "profile_icon.png"
   }
 ];
 
@@ -50,7 +64,7 @@ const RecentActivity = () => {
   return (
     <div>
       <div className='flex justify-between items-center mx-2'>
-        <h1 className='text-2xl text-green-500'>Recent Activity</h1>
+        <h1 className='text-3xl font-semibold text-[#2F580F]'>Recent Activity</h1>
         <div className='flex items-center text-gray-500 cursor-pointer'>
           <p className='mr-1'>View All</p>
           <FaArrowRight />
