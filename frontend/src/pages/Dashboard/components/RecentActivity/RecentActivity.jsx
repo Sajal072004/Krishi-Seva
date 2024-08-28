@@ -50,13 +50,6 @@ const arr = [
     activity: "Asked a question about a plant",
     time: "30 mins ago",
     img: "profile_icon.png"
-  },
-  {
-    id: 4,
-    name: "Charlie",
-    activity: "Added a new plant to wishlist",
-    time: "15 mins ago",
-    img: "profile_icon.png"
   }
 ];
 
@@ -71,7 +64,7 @@ const RecentActivity = () => {
         </div>
       </div>
 
-      <div className='mt-4'>
+      <div className='mt-8'>
         {arr.map((item) => (
           <div key={item.id} className='flex items-start justify-between py-2 border-b'>
             

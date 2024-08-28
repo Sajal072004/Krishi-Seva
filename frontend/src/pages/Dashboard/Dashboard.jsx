@@ -5,6 +5,7 @@ import SectionOne from './components/SectionOne/SectionOne'
 import Weather from './components/Weather/Weather'
 import RecentActivity from './components/RecentActivity/RecentActivity'
 import TopSeller from './components/TopSeller/TopSeller'
+import BottomSection from './components/BottomSection/BottomSection'
 
 const Dashboard = () => {
   return (
@@ -20,6 +21,7 @@ const Dashboard = () => {
             <div className='flex-row w-[55vw] z-0'>
               <SectionOne/>
               <TopSeller/>
+              <BottomSection/>
             </div>
 
             <div className='flex flex-col w-[25vw] z-0 gap-10'>
@@ -32,6 +34,7 @@ const Dashboard = () => {
 
         </div>
       </div>
+
       
     </div>
   )

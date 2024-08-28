@@ -76,7 +76,7 @@ const Sidebar = () => {
       </div>
 
       
-      <div className='mt-20 flex flex-col items-center relative'>
+      <div className='mt-16 flex flex-col items-center relative'>
         <img src="help_center.png" alt="Help Center" className='w-[95%] h-[120%] absolute z-0' />
         <p className='text-gray-700 z-20 mt-16 font-semibold'>Help Center</p>
         <p className='w-[80%] text-gray-700 z-20 mt-10 font-semibold'>Having trouble? Contact us for more questions.</p>
