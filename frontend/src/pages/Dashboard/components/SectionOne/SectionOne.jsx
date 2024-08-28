@@ -9,7 +9,7 @@ const SectionOne = () => {
         width={1200}
       />
 
-      <div className='absolute top-0 left-10 w-full h-full flex flex-col justify-center items-start p-8'>
+      <div className='absolute top-[-220px] left-10 w-full h-full flex flex-col justify-center items-start p-8'>
         <h1 className=' text-4xl font-bold mb-2 text-[#C0F196] '>
           Create and Sell Extraordinary Products
         </h1>

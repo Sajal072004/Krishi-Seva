@@ -49,13 +49,13 @@ const Sidebar = () => {
         <h1 className='text-2xl text-gray-700 font-semibold'>Krishi Seva</h1>
       </div>
 
-      <div>
+      <div className='mt-8'>
         {arr.map((item, index) => {
           return (
             <div 
               key={index} 
               onClick={() => setSelected(item.title)} 
-              className={`flex items-center py-[4px] justify-left text-xl cursor-pointer ${selected === item.title ? 'bg-[#1b7a43]' : ''}`}
+              className={`mt-2 flex items-center py-[4px] justify-left text-xl cursor-pointer ${selected === item.title ? 'bg-[#1b7a43]' : ''}`}
             >
               <div className={`p-3 ${selected === item.title ? 'text-white' : 'text-gray-500'}`}>
                 {item.icon}
@@ -70,7 +70,7 @@ const Sidebar = () => {
       </div>
 
       
-      <div className='mt-8 flex flex-col items-center relative'>
+      <div className='mt-16 flex flex-col items-center relative'>
         <img src="help_center.png" alt="Help Center" className='w-[90%] absolute z-0' />
         <p className='text-gray-700 z-20 mt-10 font-semibold'>Help Center</p>
         <p className='w-[80%] text-gray-700 z-20 mt-10 font-semibold'>Having trouble? Contact us for more questions.</p>

@@ -26,15 +26,17 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className='flex flex-col w-[25vw] z-0'>
+            <div className='flex flex-col w-[25vw] z-0 gap-10'>
               <Weather />
               <RecentActivity />
+              
             </div>
 
           </div>
 
         </div>
       </div>
+      
     </div>
   )
 }

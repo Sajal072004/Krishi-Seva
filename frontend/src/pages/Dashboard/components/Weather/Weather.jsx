@@ -1,9 +1,10 @@
 import React from 'react';
 import { TiWeatherPartlySunny } from "react-icons/ti";
 
+
 const SectionOne = () => {
   return (
-    <div className='mt-10 w-[25vw] h-[280px] bg-[#C5F4C1] flex flex-col items-center rounded-lg'>
+    <div className='mt-10 w-[25vw] h-[280px] bg-[#8cd985] flex flex-col items-center rounded-lg  border-2'>
       <div className='flex items-center '>
        
         <TiWeatherPartlySunny className='w-[11vh] h-[11vh] mr-4' />
