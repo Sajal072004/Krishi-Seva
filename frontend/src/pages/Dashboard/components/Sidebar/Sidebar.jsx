@@ -60,7 +60,7 @@ const Sidebar = () => {
           return (
             <div 
               key={index} 
-              onClick={() => setSelected(item.title)} 
+              onClick={() => {setSelected(item.title)}} 
               className={`mt-3 flex items-center py-[4px] justify-left text-xl pl-4 cursor-pointer ${selected === item.title ? 'bg-[#1b7a43]' : ''}`}
             >
               <div className={`p-3 ${selected === item.title ? 'text-white' : 'text-gray-500'}`}>
