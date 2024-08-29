@@ -55,7 +55,7 @@ const Sidebar = () => {
         <h1 className='text-2xl text-gray-700 font-semibold'>Krishi Seva</h1>
       </div>
 
-      <div className='mt-12'>
+      <div className='mt-8'>
         {arr.map((item, index) => {
           return (
             <div 

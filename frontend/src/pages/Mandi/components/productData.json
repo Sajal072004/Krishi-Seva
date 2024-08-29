@@ -35,6 +35,15 @@
       "price": 3500,
       "rating": 3,
       "category": "Crops"
+    },
+    {
+      "id": "5",
+      "title": "Barley",
+      "description": "Barley is used for food, feed, and brewing purposes.",
+      "image": "apple.png",
+      "price": 3500,
+      "rating": 3,
+      "category": "Crops"
     }
   ],
   "Seeds": [
