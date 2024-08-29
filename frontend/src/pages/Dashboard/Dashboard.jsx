@@ -17,7 +17,7 @@ const Dashboard = () => {
         </div>
 
         {/* Main content area adjusted to account for the fixed sidebar */}
-        <div className='ml-[25vw] md:ml-[20vw] w-[calc(100vw-25vw)] md:w-[calc(100vw-20vw)]'>
+        <div className='ml-[25vw] md:ml-[17vw] w-[calc(100vw-25vw)] md:w-[calc(100vw-20vw)]'>
           <Navbar />
 
           <div className='flex w-full'>

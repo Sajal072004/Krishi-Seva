@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import { IoBagCheck } from "react-icons/io5";
-import { FaStar, FaRegStar } from "react-icons/fa"; // Import filled and empty star icons
+import { FaStar, FaRegStar } from "react-icons/fa"; 
+import { FaPlus, FaMinus } from "react-icons/fa";
 
-// Function to truncate description to a minimum of 10 words and add ellipsis if needed
-const truncateDescription = (text, wordLimit) => {
+// Function to truncate text to a maximum number of words, optionally adding ellipses
+const truncateText = (text, wordLimit, addEllipsis = true) => {
   const words = text.split(' ');
-  if (words.length >= wordLimit) {
-    return words.slice(0, wordLimit).join(' ') + '...';
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(' ') + (addEllipsis ? '...' : '');
   }
-  // Pad with ellipses if there are fewer than the word limit
-  return words.concat(Array(wordLimit - words.length).fill('...')).join(' ');
+  return text;
 };
 
-// Function to render stars based on rating
 const renderStars = (rating) => {
   const filledStars = Math.floor(rating);
   const emptyStars = 5 - filledStars;
@@ -32,8 +31,12 @@ const renderStars = (rating) => {
 const Card = ({ title, description, image, price, rating }) => {
   const [quantity, setQuantity] = useState(1); // Default quantity is 1
 
-  const handleQuantityChange = (event) => {
-    setQuantity(event.target.value);
+  const handleQuantityIncrease = () => {
+    setQuantity(prevQuantity => prevQuantity + 1);
+  };
+
+  const handleQuantityDecrease = () => {
+    setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
 
   return (
@@ -43,25 +46,31 @@ const Card = ({ title, description, image, price, rating }) => {
       <div className="flex-grow flex flex-col justify-between">
         <div>
           <div className="flex justify-between w-full px-4 mt-2">
-            <p className="text-left text-lg font-medium">{title}</p>
+            <p className="text-left text-lg font-medium">{truncateText(title, 3, false)}</p>
             <div className="text-right text-lg font-medium mt-1">
               {renderStars(rating)}
             </div>
           </div>
 
-          <p className="text-left text-[14px] px-2 pl-4 mt-2">{truncateDescription(description, 10)}</p>
+          <p className="text-left text-[14px] px-2 pl-4 mt-2">{truncateText(description, 10)}</p>
 
-          <div className="flex justify-between w-full px-3 mt-2">
+          <div className="flex justify-between w-full px-3 mt-2 items-center">
             <p className="text-left ml-1 text-lg text-gray-500">1U = 25kg</p>
-            <select 
-              value={quantity}
-              onChange={handleQuantityChange}
-              className="text-center text-lg text-gray-500 bg-gray-100 border border-gray-300 rounded px-2 py-1 mr-1"
-            >
-              {[1, 2, 3, 4, 5].map((num) => (
-                <option key={num} value={num}>{num}</option>
-              ))}
-            </select>
+            <div className="flex items-center bg-transparent">
+              <button
+                onClick={handleQuantityDecrease}
+                className="w-7 h-7 flex items-center justify-center text-lg text-white bg-red-500 rounded-full hover:bg-red-600"
+              >
+                <FaMinus />
+              </button>
+              <p className="px-2 py-1 text-lg text-gray-500">{quantity}</p>
+              <button
+                onClick={handleQuantityIncrease}
+                className="w-7 h-7 flex items-center justify-center text-lg text-white bg-green-500 rounded-full hover:bg-green-600"
+              >
+                <FaPlus />
+              </button>
+            </div>
           </div>
         </div>
 
