@@ -49,19 +49,19 @@ const Sidebar = () => {
   const [selected, setSelected] = useState('Dashboard');
 
   return (
-    <div className='w-[25vw] md:w-[20vw]  bg-white'>
+    <div className='w-[25vw] md:w-[17vw] bg-white h-screen sticky top-0 overflow-y-auto'>
       <div className='flex h-[17vh] items-center gap-3 justify-left'>
         <img src="logo.png" alt="Logo" className='w-[70px] h-[70px] ml-3' />
         <h1 className='text-2xl text-gray-700 font-semibold'>Krishi Seva</h1>
       </div>
 
-      <div className='mt-9'>
+      <div className='mt-12'>
         {arr.map((item, index) => {
           return (
             <div 
               key={index} 
-              onClick={() => {setSelected(item.title)}} 
-              className={`mt-3 flex items-center py-[4px] justify-left text-xl pl-4 cursor-pointer ${selected === item.title ? 'bg-[#1b7a43]' : ''}`}
+              onClick={() => { setSelected(item.title) }} 
+              className={`mt-0 flex items-center py-[4px] justify-left text-xl pl-4 my-2 cursor-pointer ${selected === item.title ? 'bg-[#1b7a43]' : ''}`}
             >
               <div className={`p-3 ${selected === item.title ? 'text-white' : 'text-gray-500'}`}>
                 {item.icon}
@@ -75,7 +75,6 @@ const Sidebar = () => {
         })}
       </div>
 
-      
       <div className='mt-16 flex flex-col items-center relative'>
         <img src="help_center.png" alt="Help Center" className='w-[95%] h-[120%] absolute z-0' />
         <p className='text-gray-700 z-20 mt-16 font-semibold'>Help Center</p>

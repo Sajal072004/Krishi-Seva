@@ -37,7 +37,7 @@ const Card = ({ title, description, image, price, rating }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center border rounded-lg shadow-md overflow-hidden mt-5 bg-white" style={{ height: '420px', width: '280px' }}>
+    <div className="flex flex-col items-center justify-center border rounded-lg shadow-md overflow-hidden mt-5 bg-white mr-12" style={{ height: '420px', width: '260px' }}>
       <img src={image} alt={title} className="object-fit " style={{ height: '56%', width: '100%' }} />
       
       <div className="flex justify-between w-full px-4 mt-2">
