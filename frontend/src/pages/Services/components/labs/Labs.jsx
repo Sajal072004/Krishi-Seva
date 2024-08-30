@@ -3,7 +3,7 @@ import React from 'react'
 const Labs = () => {
   return (
     <div 
-      className='h-[70vh] mt-16 ml-16 w-[90vw] flex justify-center items-center'
+      className='h-[70vh] mt-16 ml-16 w-[90vw] flex justify-center items-center' id='labs'
       style={{ 
         backgroundImage: `url('labs.webp')`, 
         backgroundSize: 'cover',
