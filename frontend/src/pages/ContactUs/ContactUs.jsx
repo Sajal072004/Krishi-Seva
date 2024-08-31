@@ -45,6 +45,7 @@ const ContactUs = () => {
           <div className="w-[65%] p-6 flex flex-col justify-start bg-[#33814B]">
             <h1 className='mt-4 mb-4 text-xl text-white'>Full Name</h1>
             <input
+            required
               type="text"
               name="user_name"
               placeholder="Full Name"
@@ -52,6 +53,7 @@ const ContactUs = () => {
             />
             <h1 className='mb-4 text-xl text-white'>Email</h1>
             <input
+            required
               type="email"
               name="user_email"
               placeholder="Email"
@@ -59,6 +61,7 @@ const ContactUs = () => {
             />
             <h1 className='mb-4 text-xl text-white'>Message</h1>
             <textarea
+            required
               name="message"
               placeholder="Message"
               className="mb-4 p-2 border border-white rounded-[15px] bg-transparent h-24 pl-4 text-white placeholder-white focus:outline-none focus:ring-0"
