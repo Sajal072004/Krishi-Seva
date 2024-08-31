@@ -6,7 +6,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
-const genAI = new GoogleGenerativeAI('AIzaSyCHd-JrKSAk4WvH7A3hi7gQZTcomwb_fdM');
+const genAI = new GoogleGenerativeAI('Dio_is_an_idiot');
 
 app.use(express.static('public'));
 
